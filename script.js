@@ -39,12 +39,12 @@ function startTerminal() {
     let term = document.getElementById("terminal");
 
     let lines = [
-        "Initializing system...\n",
-        "Loading feelings...\n",
-        "Analyzing heart...\n",
-        "Target found ❤️\n",
-        "Name detected: Khushi\n",
-        "Preparing message...\n",
+        "Initializing system...",
+        "Loading feelings...",
+        "Analyzing heart...",
+        "Target found ❤️",
+        "Name detected: Khushi",
+        "Preparing message...",
         "System ready..."
     ];
 
@@ -52,7 +52,12 @@ function startTerminal() {
 
     function typeLine() {
         if (i < lines.length) {
-            term.innerHTML += lines[i] + "<br>";
+            let p = document.createElement("p");
+            p.textContent = lines[i];
+            term.appendChild(p);
+
+            term.scrollTop = term.scrollHeight; // auto scroll down
+
             i++;
             setTimeout(typeLine, 700);
         } else {
