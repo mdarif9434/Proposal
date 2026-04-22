@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Happiness ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Confetti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+
+<!-- 🎵 Music -->
+<audio id="bgMusic" loop>
+  <source src="Song.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+
+<h1 id="typing"></h1>
+
+<button onclick="start()">Please! Open My Heart 💌</button>
+
+<!-- 🎮 Game -->
+<div id="game" class="hidden">
+    <p>Please! Guess the correct One 🔎 (1-3)</p>
+    <button onclick="guess(1)">1</button>
+    <button onclick="guess(2)">2</button>
+    <button onclick="guess(3)">3</button>
+</div>
+
+<!-- 😎 Hacker Terminal -->
+<div id="terminal" class="hidden"></div>
+
+<!-- 💖 Proposal -->
+<div id="proposal" class="hidden">
+    <h2>তুমি কি আমার সেই সুখের কারণ হবে?🌹🧎</h2>
+    <button class="yes" onclick="yes()">Yes 😍</button>
+    <button class="no" onclick="no()">No 😅</button>
+</div>
+
+<!-- 🎥 Video -->
+<div id="videoBox" class="hidden">
+    <p>Watch this 💖</p>
+    <video controls>
+        <source src="proposal.mp4" type="video/mp4">
+    </video>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
