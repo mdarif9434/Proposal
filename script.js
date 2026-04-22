@@ -39,12 +39,12 @@ function startTerminal() {
     let term = document.getElementById("terminal");
 
     let lines = [
-        "Initializing system...",
-        "Loading feelings...",
-        "Analyzing heart...",
-        "Target found ❤️",
-        "Name detected: Khushi",
-        "Preparing message...",
+        "Initializing system...\n",
+        "Loading feelings...\n",
+        "Analyzing heart...\n",
+        "Target found ❤️\n",
+        "Name detected: Khushi\n",
+        "Preparing message...\n",
         "System ready..."
     ];
 
